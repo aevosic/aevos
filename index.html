@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en" class="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aevos — Local-First Agent Audit HQ</title>
+    <meta
+      name="description"
+      content="Local-first personal HQ for multi-agent audit logging, real-time telemetry, director review triage, and interactive project workflow graphs."
+    />
+    <meta property="og:title" content="Aevos — Local-First Agent Audit HQ" />
+    <meta
+      property="og:description"
+      content="Local-first personal HQ for multi-agent audit logging, real-time telemetry, director review triage, and interactive project workflow graphs."
+    />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,400&family=JetBrains+Mono:wght@400;500;600&family=Plus+Jakarta+Sans:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <script>
+      (function () {
+        try {
+          var saved = localStorage.getItem('aevos-theme');
+          if (saved === 'light') {
+            document.documentElement.classList.remove('dark');
+          } else {
+            document.documentElement.classList.add('dark');
+          }
+        } catch (e) {}
+      })();
+    </script>
+  </head>
+  <body class="bg-[#FAFAFB] dark:bg-[#0B0D10] text-[#11151C] dark:text-[#E8ECF2] antialiased selection:bg-amber-500/20 selection:text-amber-600 dark:selection:text-amber-300">
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>

@@ -1,0 +1,15 @@
+node_modules/
+build/
+dist/
+coverage/
+.DS_Store
+*.log
+.env*
+!.env.example
+.aistudio/
+.antigravity/
+.vscode/
+Aevos HQ.app/
+data/
+rust-hq/target/
+.selftest-scratch/
